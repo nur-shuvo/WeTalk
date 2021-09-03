@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "824933305486",
+    "project_id": "fourtwenty-cb1cd",
+    "storage_bucket": "fourtwenty-cb1cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824933305486:android:6d6633fba32870753d0ddf",
+        "android_client_info": {
+          "package_name": "com.example.relaxationsounds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824933305486-jlu2lbse0krilbb1b9m64q40mvfheoen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsglRROZhFluVL3DLdSFi9_C9tLwLZwCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824933305486-jlu2lbse0krilbb1b9m64q40mvfheoen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
