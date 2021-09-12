@@ -8,6 +8,7 @@ import sdk.chat.firebase.adapter.module.FirebaseModule
 import sdk.chat.firebase.push.FirebasePushModule
 import sdk.chat.firebase.ui.FirebaseUIModule
 import sdk.chat.firebase.upload.FirebaseUploadModule
+import sdk.chat.ui.ChatSDKUI
 import sdk.chat.ui.module.UIModule
 import java.util.concurrent.TimeUnit
 
@@ -42,6 +43,10 @@ class FourTwentyApplication : Application() {
                 ) // Activate
                 .build()
                 .activate(this)
+
+            //customize UI
+            ChatSDKUI.setMainActivity(CustomMainAppBarActivity::class.java)
+
         } catch (e: Exception) {
             e.printStackTrace()
         }
