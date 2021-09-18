@@ -1,6 +1,8 @@
-package com.example.relaxationsounds
+package com.example.relaxationsounds.customActivity
 
-import android.content.Intent
+import android.os.Bundle
+import android.os.PersistableBundle
+import android.util.Log
 import android.widget.Toast
 import sdk.chat.ui.activities.MainAppBarActivity
 

@@ -1,6 +1,8 @@
 package com.example.relaxationsounds
 
 import android.app.Application
+import com.example.relaxationsounds.customActivity.CustomLoginActivity
+import com.example.relaxationsounds.customActivity.CustomMainAppBarActivity
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.PhoneAuthProvider
 import sdk.chat.core.session.ChatSDK
@@ -36,16 +38,18 @@ class FourTwentyApplication : Application() {
                 ) // Add modules to handle file uploads, push notifications
                 .addModule(FirebaseUploadModule.shared())
                 .addModule(FirebasePushModule.shared()) // Enable Firebase UI with phone and email auth
-                .addModule(
-                    FirebaseUIModule.builder()
-                        .setProviders(EmailAuthProvider.PROVIDER_ID, PhoneAuthProvider.PROVIDER_ID)
-                        .build()
-                ) // Activate
+//                .addModule(
+//                    FirebaseUIModule.builder()
+//                        .setProviders(EmailAuthProvider.PROVIDER_ID, PhoneAuthProvider.PROVIDER_ID)
+//                        .build()
+//                ) // Activate
                 .build()
                 .activate(this)
 
             //customize UI
+            ChatSDK.config().logoDrawableResourceID = R.drawable.app_icon
             ChatSDKUI.setMainActivity(CustomMainAppBarActivity::class.java)
+            ChatSDKUI.setLoginActivity(CustomLoginActivity::class.java)
 
         } catch (e: Exception) {
             e.printStackTrace()
